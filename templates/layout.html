@@ -20,9 +20,9 @@
         <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" />
     </head>
     <body>
-        <div class="container-fluid">
+        <!--<div class="container-fluid">-->
             <!-- navbar -->
-            <nav class="navbar navbar-default">
+            <nav class="navbar navbar-default navbar-static-top">
                 <!-- For fixed nav, add class  navbar-fixed-top to nav -->
                 <div class="container">
                     <div class="navbar-header">
@@ -45,9 +45,9 @@
                 </div>
             </nav>
             <!-- /navbar -->
+        <!--</div>-->
         {% block body %}
         {% endblock %}
-        </div>
         <!-- /container-fluid -->
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>

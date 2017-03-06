@@ -1,6 +1,21 @@
-@import url("https://fonts.googleapis.com/css?family=Inconsolata");
+@import url("https://fonts.googleapis.com/css?family=Lato");
+body {
+  font-family: Lato, sans-serif; }
+
+nav.navbar {
+  margin-bottom: 0; }
+
+div.about-me {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-left: 5%;
+  padding-right: 5%; }
+
 div.section-heading {
-  font-family: Inconsolata, sans-serif;
-  font-weight: bolder; }
+  font-size: 4rem;
+  text-align: center; }
+
+div.project h3 {
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
