@@ -16,11 +16,8 @@ window.onload = () => {
             data: formData,
             encode: true,
             success: (response) => {
-                // 1. Clear the form
                 contactForm.trigger("reset");
-                // 2. Show a confirmation
                 button.html("Sent! <i class='fa fa-check-circle'></i>");
-                // 3. Hide the form again(?)
             },
             error: (err) => {
                 // 1. Show an error message
@@ -36,6 +33,7 @@ const toggleForm = () => {
     const { display } = contactForm.style;
     if (display === 'none' || !display) {
         contactForm.style.display = 'inline-block';
+        
     } else {
         contactForm.style.display = 'none';
     }
