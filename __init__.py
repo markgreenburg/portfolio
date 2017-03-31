@@ -20,7 +20,7 @@ def submit():
     """
     Handles contact form submissions and responds back to client.
     """
-    # Insert code to validate and send email here
+    
     return jsonify({
         'message': "Email sent successfully",
         'data': {},
