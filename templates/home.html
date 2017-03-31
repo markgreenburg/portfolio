@@ -71,15 +71,20 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-xs-12 contact-icons">
+        <div class="col-xs-12 contact-icons text-center">
             <a href="https://github.com/markgreenburg">
                 <i class="fa fa-github fa-4x"></i>
             </a>
             <a href="https://www.linkedin.com/in/markgreenburgjr">
                 <i class="fa fa-linkedin-square fa-4x"></i>
             </a>
-            
         </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 text-center mail-to">
+            <a  href="mailto:mark@markgreenburg.com">mark@markgreenburg.com</a>
+        </div>
+    </div>
         <div class="col-sm-offset-4 col-sm-4 col-xs-12" id="contact-form-div">
             <form id="contact-form">
                 <label>Your Name</label><br />
@@ -87,11 +92,13 @@
                 placeholder="Jane Doe"required>
                 <label>Your Email</label><br />
                 <input id="email" class="form-control" type="email" width="95" 
-                placeholder="example@domain.com"required>
+                placeholder="you@somewhere.com"required>
                 <label>Message</label><br />
-                <textarea id="message" class="form-control" cols="95" rows="10" required>
-                </textarea>
-                <button id="submit-btn" class="btn btn-default">Send</button>
+                <textarea id="message" class="form-control" cols="95" rows="10" 
+                required></textarea>
+                <button id="submit-btn" class="btn btn-default pull-right">
+                    Send <i class="fa fa-arrow-right"></i>
+                </button>
             </form>
     </div>
 </div>

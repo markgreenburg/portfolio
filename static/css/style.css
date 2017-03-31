@@ -18,16 +18,25 @@ div.section-heading {
 div.project h3 {
   text-align: center; }
 
-div.contact-icons {
-  text-align: center; }
-  div.contact-icons a {
-    opacity: .6;
-    padding: 20px; }
-    div.contact-icons a i.fa-github {
-      color: black; }
-    div.contact-icons a i.fa-linkedin-square {
-      color: #0077B5; }
-  div.contact-icons a:hover {
-    opacity: .8; }
+div.contact-icons a {
+  opacity: .6;
+  padding: 20px;
+  text-decoration: none; }
+  div.contact-icons a i.fa-github {
+    color: black; }
+  div.contact-icons a i.fa-linkedin-square {
+    color: #0077B5; }
+div.contact-icons a:hover {
+  opacity: .8; }
+
+div.mail-to {
+  margin-top: 20px; }
+
+form label {
+  margin-top: 20px; }
+
+button#submit-btn {
+  margin-top: 20px;
+  margin-bottom: 20px; }
 
 /*# sourceMappingURL=style.css.map */

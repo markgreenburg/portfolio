@@ -27,10 +27,10 @@ div.project h3 {
 }
 
 div.contact-icons {
-    text-align: center;
     a {
         opacity: .6;
         padding: 20px;
+        text-decoration: none;
         i.fa-github {
             color: black;
         };
@@ -42,3 +42,16 @@ div.contact-icons {
         opacity: .8;
     };
 };
+
+div.mail-to {
+    margin-top: 20px;
+}
+
+form label {
+    margin-top: 20px;
+} 
+
+button#submit-btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

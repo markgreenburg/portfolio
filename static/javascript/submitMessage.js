@@ -1,9 +1,10 @@
 'use strict';
 window.onload = () => {
-    const contactForm = $("#contact-form")
+    const contactForm = $("#contact-form");
+    const button = $("button#submit-btn");
+    // Handle contact form submissions and client response
     contactForm.on("submit", (event) => {
         event.preventDefault();
-        const button = $("button#submit-btn");
         button.html("(This might take a sec) <i class='fa fa-spinner fa-spin'></i>");
         const formData = {
             "name": $("input#name").val(),
@@ -18,23 +19,21 @@ window.onload = () => {
             success: (response) => {
                 contactForm.trigger("reset");
                 button.html("Sent! <i class='fa fa-check-circle'></i>");
+                $("div#form-err-msg").remove();
             },
             error: (err) => {
-                // 1. Show an error message
-                // 2. Log the error
-            }
+                $("form#contact-form").append(`
+                <div id='form-err-msg'><p>Sorry, the robots messed up! Please 
+                submit again or email me directly at 
+                <a href="mailto:mark@markgreenburg.com">
+                mark@markgreenburg.com</a>.</p></div>`);
+                button.html("Send <i class='fa fa-arrow-right'></i>");
+            },
         });
     });
-};
 
-/* Toggles visibility of the contact form */
-const toggleForm = () => {
-    const contactForm = document.getElementById("contact-form-div");
-    const { display } = contactForm.style;
-    if (display === 'none' || !display) {
-        contactForm.style.display = 'inline-block';
-        
-    } else {
-        contactForm.style.display = 'none';
-    }
+    // Reset button if form contents changed
+    contactForm.children().on("keypress", () => {
+        button.html("Send <i class='fa fa-arrow-right'></i>");
+    });
 };
