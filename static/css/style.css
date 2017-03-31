@@ -18,4 +18,21 @@ div.section-heading {
 div.project h3 {
   text-align: center; }
 
+div.contact-icons {
+  text-align: center; }
+  div.contact-icons a {
+    opacity: .6;
+    padding: 20px; }
+    div.contact-icons a i.fa-github {
+      color: black; }
+    div.contact-icons a i.fa-linkedin-square {
+      color: #0077B5; }
+    div.contact-icons a i.fa-paper-plane {
+      color: #FF3900; }
+  div.contact-icons a:hover {
+    opacity: .8; }
+
+div#contact-form-div {
+  display: none; }
+
 /*# sourceMappingURL=style.css.map */

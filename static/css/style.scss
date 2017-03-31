@@ -22,10 +22,30 @@ div.section-heading {
     text-align: center;
 }
 
-div.happyfinder {
-    
-}
-
 div.project h3 {
     text-align: center;
 }
+
+div.contact-icons {
+    text-align: center;
+    a {
+        opacity: .6;
+        padding: 20px;
+        i.fa-github {
+            color: black;
+        };
+        i.fa-linkedin-square {
+            color: #0077B5;
+        };
+        i.fa-paper-plane {
+            color: #FF3900;
+        }
+    };
+    a:hover {
+        opacity: .8;
+    };
+};
+
+div#contact-form-div {
+    display: none;
+};

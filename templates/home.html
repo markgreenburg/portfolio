@@ -12,7 +12,7 @@
 </div>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-xs-12  section-heading">
+        <div class="col-xs-12  section-heading projects">
             Select Projects
         </div>
     </div>
@@ -25,14 +25,18 @@
             </div>
             <div class="row image-row">
                 <div class="col-xs-12">
-                    <img class="img-responsive img-thumbnail" src="{{url_for('static', filename='images/markwith2.png')}}" />
+                    <img class="img-responsive img-thumbnail" src=
+                    "{{url_for('static', filename='images/markwith2.png')}}"/>
                 </div>
             </div>
             <div class="row content-row">
                 <div class="col-xs-12">
-                    <p>markWith is a collaborative Markdown editor (and RESTful API) that allows multiple users to work on the same Markdown 
-                    file together in real time, and renders the resulting Markdown formatting as changes are made to the document. Built 
-                    using MongoDB, Node JS, Express, socket.io, Handlebars, JQuery, Bootstrap, and Heroku.</p>
+                    <p>markWith is a collaborative Markdown editor (and RESTful
+                     API) that allows multiple users to work on the same 
+                     Markdown file together in real time, and renders the 
+                     resulting Markdown formatting as changes are made to the 
+                     document. Built using MongoDB, Node JS, Express, 
+                     socket.io, Handlebars, JQuery, Bootstrap, and Heroku.</p>
                 </div>
             </div>
         </div>
@@ -44,29 +48,66 @@
             </div>
             <div class="row image-row">
                 <div class="col-xs-12">
-                    <img class="img-responsive img-thumbnail" src="{{url_for('static', filename='images/happyfinder2.png')}}" />
+                    <img class="img-responsive img-thumbnail" src=
+                    "{{url_for('static', filename='images/happyfinder2.png')}}"
+                    />
                 </div>
             </div>
             <div class="row content-row">
                 <div class="col-xs-12">
-                    <p>HappyFinder is a way to easily find happy hours by time-of-day and day-of-week. The project heavily utilizes data 
-                    scraping / parsing of the Google Places and FourSquare APIs. Built with PostgreSQL, Python, Flask, Jinja, and Bootstrap.
-                    Deployed on an AWS instance with SSL.</p> 
+                    <p>HappyFinder is a way to easily find happy hours by 
+                    time-of-day and day-of-week. The project heavily utilizes 
+                    data scraping / parsing of the Google Places and 
+                    FourSquare APIs. Built with PostgreSQL, Python, Flask, 
+                    Jinja, and Bootstrap. Deployed on an AWS instance with SSL.
+                    </p> 
                 </div>
             </div>
         </div>
     </div>
     <div class="row">
-        <div class="col-xs-12  section-heading">
+        <div class="col-xs-12  section-heading contact">
             Get In Touch
         </div>
     </div>
     <div class="row">
-        <div class="col-xs-12">
-            Github
-            LinkedIn
-            mark@markgreenburg.com
+        <div class="col-xs-12 contact-icons">
+            <a href="https://github.com/markgreenburg">
+                <i class="fa fa-github fa-4x"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/markgreenburgjr">
+                <i class="fa fa-linkedin-square fa-4x"></i>
+            </a>
+            <a href="#contact-icons" onClick="showForm()">
+                <i class="fa fa-paper-plane fa-4x"></i>
+            </a>
         </div>
+        <div class="col-sm-offset-4 col-sm-4 col-xs-12" id="contact-form-div">
+            <form id="contact-form">
+                <label>Your Name</label><br />
+                <input id="name" class="form-control" type="text" width="95" 
+                placeholder="Jane Doe"required>
+                <label>Your Email</label><br />
+                <input id="email" class="form-control" type="email" width="95" 
+                placeholder="example@domain.com"required>
+                <label>Message</label><br />
+                <textarea id="message" class="form-control" cols="95" rows="10" required>
+                </textarea>
+                <button class="btn btn-default">Submit</button>
+            </form>
     </div>
 </div>
+<script>
+    const showForm = () => {
+        const contactForm = document.getElementById("contact-form-div");
+        const { display } = contactForm.style;
+        if (display === 'none' || !display) {
+            contactForm.style.display = 'inline-block';
+        } else {
+            contactForm.style.display = 'none';
+        }
+    };
+</script>
+<script src="{{url_for('static', filename='javascript/submitMessage.js')}}">
+</script>
 {% endblock %}
