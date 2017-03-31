@@ -13,7 +13,7 @@ window.onload = () => {
             data: formData,
             encode: true,
             success: (response) => { console.log(response) },
-            error: (err) => { /* show error message */ }
+            error: (err) => { console.log(err) }
         });
     });
 };
