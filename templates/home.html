@@ -78,7 +78,7 @@
             <a href="https://www.linkedin.com/in/markgreenburgjr">
                 <i class="fa fa-linkedin-square fa-4x"></i>
             </a>
-            <a href="#contact-icons" onClick="showForm()">
+            <a href="#contact-icons" onClick="toggleForm()">
                 <i class="fa fa-paper-plane fa-4x"></i>
             </a>
         </div>
@@ -93,21 +93,10 @@
                 <label>Message</label><br />
                 <textarea id="message" class="form-control" cols="95" rows="10" required>
                 </textarea>
-                <button class="btn btn-default">Submit</button>
+                <button id="submit-btn" class="btn btn-default">Submit</button>
             </form>
     </div>
 </div>
-<script>
-    const showForm = () => {
-        const contactForm = document.getElementById("contact-form-div");
-        const { display } = contactForm.style;
-        if (display === 'none' || !display) {
-            contactForm.style.display = 'inline-block';
-        } else {
-            contactForm.style.display = 'none';
-        }
-    };
-</script>
 <script src="{{url_for('static', filename='javascript/submitMessage.js')}}">
 </script>
 {% endblock %}
