@@ -6,16 +6,18 @@
         <h1>Hi There.</h1>
         <p id="description">I'm a software engineer who's analytical, 
         detail-oriented, and appreciates clean, readable code. I enjoy
-        developing with back-end technologies such as <code>Python/Flask</code>, 
-        <code>Node.js/Express</code>, <code>MySQL/PostgreSQL</code>, and 
-        <code>Mongo/Mongoose</code>; as well as front-end technologies such 
-        as <code>React</code>, <code>JavaScript</code>, and 
-        <code>JQuery</code>. I have extensive experience in Operations, both 
-        as a Team Lead, and as an individual contributor overseeing business 
-        strategy at <code>Google</code>.</p>
+        developing with back-end technologies such as <code>Python</code>/
+        <code>Flask</code>, <code>Node.js</code>/<code>Express</code>, 
+        <code>MySQL</code>/<code>PostgreSQL</code>, and <code>Mongo</code>/
+        <code>Mongoose</code>; as well as front-end technologies such as 
+        <code>React</code>, <code>JavaScript</code>, and <code>JQuery</code>. 
+        I have extensive experience in Operations, both as a Team Lead, and 
+        as an individual contributor overseeing business strategy at 
+        <code>Google</code>.</p>
     </div>
 </div>
-<div class="container-fluid">
+<!-- Projects Container -->
+<div class="container-fluid projects-container text-center">
     <div class="row">
         <div class="col-xs-12  section-heading projects">
             Select Projects
@@ -26,7 +28,9 @@
         <div class="col-sm-6 col-xs-12 project skilltreat-native">
             <div class="row">
                 <div class="col-xs-12">
-                    <h3>SkillTreat Native<h3>
+                    <h3>SkillTreat Native</h3>
+                    <a href="https://github.com/markgreenburg/skilltreatnative">
+                    <i class="fa fa-github"></i> GitHub</a>
                 </div>
             </div>
             <div class="row image-row">
@@ -48,7 +52,9 @@
         <div class="col-sm-6 col-xs-12 project skilltreat-api">
             <div class="row">
                 <div class="col-xs-12">
-                    <h3>SkillTreat API<h3>
+                    <h3>SkillTreat API</h3>
+                    <a target="_blank" href="https://github.com/markgreenburg/skilltreatapi">
+                    <i class="fa fa-github"></i> GitHub</a>
                 </div>
             </div>
             <div class="row image-row">
@@ -61,13 +67,12 @@
             <div class="row content-row">
                 <div class="col-xs-12">
                     <p>SkillTreat is an eCommerce API built with PostgreSQL,
-                    Sequelize, NodeJs, and Express. It's deployed on AWS and
-                    uses SSL encryption. Since SkillTreat was built for 
-                    in-person classes that take place at a specific point in 
-                    time, it goes beyond typical eComm functionality in that
-                    each purchasable class has start and end times, which gate
-                    a lot of functionality (e.g., a user can't see or sign up 
-                    for a class that already started).
+                    Sequelize ORM, NodeJs, and Express. It's deployed on AWS and
+                    uses SSL encryption. The API features core eComm. 
+                    capabilities (user, cart, order management, etc.). 
+                    Authentication is stateless, using JSON web tokens. New 
+                    user registration includes a verification flow, with users
+                    able to request new tokens upon expiration or blacklisting.
                     </p> 
                 </div>
             </div>
@@ -79,7 +84,11 @@
         <div class="col-sm-6 col-xs-12 project markwith">
             <div class="row">
                 <div class="col-xs-12">
-                    <h3>markWith<h3>
+                    <h3>markWith</h3>
+                    <a target="_blank" href="https://github.com/markgreenburg/markWith">
+                    <i class="fa fa-github"></i> GitHub</a> | 
+                    <a target="_blank" href="https://markwith.herokuapp.com">
+                     Website</a>
                 </div>
             </div>
             <div class="row image-row">
@@ -102,7 +111,11 @@
         <div class="col-sm-6 col-xs-12 project happyfinder">
             <div class="row">
                 <div class="col-xs-12">
-                    <h3>HappyFinder<h3>
+                    <h3>HappyFinder</h3>
+                    <a target="_blank" href="https://github.com/markgreenburg/happyproject">
+                    <i class="fa fa-github"></i> GitHub</a> | 
+                    <a target="_blank" href="https://markgreenburg.com/happyhour">
+                     Website</a>
                 </div>
             </div>
             <div class="row image-row">
@@ -125,6 +138,168 @@
         </div>
     </div>
     <!-- / Project Row 2-->
+</div>
+<!-- / Projects Container -->
+<!-- Tech Container -->
+<div class="container-fluid tech-container bg-primary">
+    <div class="row text-center">
+        <div class="col-xs-12  section-heading technologies">
+            Technologies
+        </div>
+    </div>
+    <div class="row icon-container">
+        <div class="row text-center">
+            <div class="col-lg-10 col-lg-offset-1">
+                <div class="row icon-row">
+                    <div class="col-md-3 col-xs-6">
+                        <div class="stack-container">
+                            <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="devicon-amazonwebservices-original fa-stack-1x text-primary"></i>
+                            </span>
+                            <h4>AWS</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="stack-container">
+                            <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="devicon-apache-plain fa-stack-1x text-primary"></i>
+                            </span>
+                            <h4>Apache</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="stack-container">
+                            <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="devicon-bootstrap-plain fa-stack-1x text-primary"></i>
+                            </span>
+                            <h4>Bootstrap</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="stack-container">
+                            <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="devicon-css3-plain fa-stack-1x text-primary"></i>
+                            </span>
+                            <h4>CSS3</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row icon-row">
+                    <div class="col-md-3 col-xs-6">
+                        <div class="stack-container">
+                            <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="devicon-git-plain fa-stack-1x text-primary"></i>
+                            </span>
+                            <h4>Git</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="stack-container">
+                            <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="devicon-heroku-original fa-stack-1x text-primary"></i>
+                            </span>
+                            <h4>heroku</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="stack-container">
+                            <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="devicon-html5-plain fa-stack-1x text-primary"></i>
+                            </span>
+                            <h4>HTML5</h4>
+                        </div>
+                    </div>                    
+                    <div class="col-md-3 col-xs-6">
+                        <div class="stack-container">
+                            <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="devicon-javascript-plain fa-stack-1x text-primary"></i>
+                            </span>
+                            <h4>JavaScript</h4>
+                        </div>
+                    </div>                  
+                </div>
+                <div class="row icon-row">
+                    <div class="col-md-3 col-xs-6">
+                        <div class="stack-container">
+                            <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="devicon-jquery-plain fa-stack-1x text-primary"></i>
+                            </span>
+                            <h4>jQuery</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="stack-container">
+                            <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="devicon-mongodb-plain fa-stack-1x text-primary"></i>
+                            </span>
+                            <h4>mongoDB</h4>
+                        </div>
+                    </div>                                          
+                    <div class="col-md-3 col-xs-6">
+                        <div class="stack-container">
+                            <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="devicon-mysql-plain fa-stack-1x text-primary"></i>
+                            </span>
+                            <h4>MySQL</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="stack-container">
+                            <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="devicon-nodejs-plain fa-stack-1x text-primary"></i>
+                            </span>
+                            <h4>Node.js</h4>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="row icon-row">
+                    <div class="col-md-3 col-xs-6">
+                        <div class="stack-container">
+                            <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="devicon-react-original fa-stack-1x text-primary"></i>
+                            </span>
+                            <h4>React</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="stack-container">
+                            <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="devicon-python-plain fa-stack-1x text-primary"></i>
+                            </span>
+                            <h4>Python</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="stack-container">
+                            <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="devicon-postgresql-plain fa-stack-1x text-primary"></i>
+                            </span>
+                            <h4>PostgreSQL</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- / Tech Container -->
+<!-- Contact Container -->
+<div class="container-fluid contact-container">
     <div class="row">
         <div class="col-xs-12  section-heading contact">
             Get In Touch
@@ -132,36 +307,39 @@
     </div>
     <div class="row">
         <div class="col-xs-12 contact-icons text-center">
-            <a href="https://github.com/markgreenburg">
+            <a target="_blank" href="https://github.com/markgreenburg">
                 <i class="fa fa-github fa-4x"></i>
             </a>
-            <a href="https://www.linkedin.com/in/markgreenburgjr">
+            <a target="_blank" href="https://www.linkedin.com/in/markgreenburgjr">
                 <i class="fa fa-linkedin-square fa-4x"></i>
             </a>
         </div>
     </div>
     <div class="row">
         <div class="col-xs-12 text-center mail-to">
-            <a  href="mailto:mark@markgreenburg.com">mark@markgreenburg.com</a>
+            <a  target="_blank" href="mailto:mark@markgreenburg.com"
+            >mark@markgreenburg.com</a>
         </div>
     </div>
-        <div class="col-sm-offset-4 col-sm-4 col-xs-12" id="contact-form-div">
-            <form id="contact-form">
-                <label>Your Name</label><br />
-                <input id="name" class="form-control" type="text" width="95" 
-                placeholder="Jane Doe"required>
-                <label>Your Email</label><br />
-                <input id="email" class="form-control" type="email" width="95" 
-                placeholder="you@somewhere.com"required>
-                <label>Message</label><br />
-                <textarea id="message" class="form-control" cols="95" rows="10" 
-                required></textarea>
-                <button id="submit-btn" class="btn btn-default pull-right">
-                    Send <i class="fa fa-arrow-right"></i>
-                </button>
-            </form>
+    <div class="col-sm-offset-4 col-sm-4 col-xs-12" id="contact-form-div">
+        <form id="contact-form">
+            <label>Your Name</label><br />
+            <input id="name" class="form-control" type="text" width="95" 
+            placeholder="Jane Doe"required>
+            <label>Your Email</label><br />
+            <input id="email" class="form-control" type="email" width="95" 
+            placeholder="you@somewhere.com"required>
+            <label>Message</label><br />
+            <textarea id="message" class="form-control" cols="95" rows="10" 
+            required></textarea>
+            <button id="submit-btn" class="btn btn-default pull-right">
+                Send <i class="fa fa-arrow-right"></i>
+            </button>
+        </form>
     </div>
 </div>
+<!-- / Contact Container -->
+
 <script src="{{url_for('static', filename='javascript/submitMessage.js')}}">
 </script>
 {% endblock %}

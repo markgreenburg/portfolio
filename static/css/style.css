@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Lato");
 body {
-  font-family: Lato, sans-serif; }
+  font-family: Open-Sans, sans-serif; }
 
 nav.navbar {
   margin-bottom: 0; }
@@ -12,8 +12,10 @@ div.about-me {
   padding-right: 5%; }
 
 div.section-heading {
-  font-size: 4rem;
-  text-align: center; }
+  font-size: 5rem;
+  font-weight: bolder;
+  text-align: center;
+  margin: 20px; }
 
 div.project h3 {
   text-align: center; }

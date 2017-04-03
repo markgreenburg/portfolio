@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
-$font-stack: Lato, sans-serif;
+$font-stack: Open-Sans, sans-serif;
 
 body {
     font-family: $font-stack;
@@ -18,8 +18,10 @@ div.about-me {
 }
 
 div.section-heading {
-    font-size: 4rem;
+    font-size: 5rem;
+    font-weight: bolder;
     text-align: center;
+    margin: 20px;
 }
 
 div.project h3 {
