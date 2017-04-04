@@ -4,6 +4,7 @@ Main Flask routes and app file for portfolio
 import sys
 from flask import Flask, request, jsonify, render_template, url_for
 import mail
+import config
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
@@ -40,4 +41,5 @@ def submit():
         }), 500
 
 if __name__ == "__main__":
-    APP.run(debug=True)
+    APP.secret_key = config.SECRET_KEY
+    APP.run()
