@@ -27,11 +27,12 @@
     </div>
     <!--Project Row 1-->
     <div class="row">
-        <div class="col-sm-6 col-xs-12 project skilltreat-native">
+        <div class="col-sm-6 col-xs-12 project skilltreat">
             <div class="row">
                 <div class="col-xs-12">
-                    <h3>SkillTreat Native</h3>
-                    <a href="https://github.com/markgreenburg/skilltreatnative">
+                    <h3>SkillTreat</h3>
+                    <a target="_blank"
+                    href="https://github.com/markgreenburg/skilltreat" >
                     <i class="fa fa-github"></i> GitHub</a>
                 </div>
             </div>
@@ -43,38 +44,39 @@
             </div>
             <div class="row content-row">
                 <div class="col-xs-12">
-                    <p>SkillTreat is a native, full-featured, cross-platform 
-                    mobile app made with the React Native framework. It 
-                    features user identity management, account registration, 
-                    cart management, and full integration with the Stripe API.
-                    It serves as the front end for the SkillTreat API.</p>
+                    <p>SkillTreat is an eCommerce API and accompanying React Native mobile app that serves as the frontend. 
+                    The API is built with PostgreSQL, Sequelize ORM, NodeJs, 
+                    and Express. It's deployed on AWS and uses SSL encryption;
+                    payment processing is handled by Stripe. Authentication is
+                    stateless, using JSON web tokens. New user registration
+                    includes a verification email flow.
+                    </p> 
                 </div>
             </div>
         </div>
-        <div class="col-sm-6 col-xs-12 project skilltreat-api">
+        <div class="col-sm-6 col-xs-12 project acquisition">
             <div class="row">
                 <div class="col-xs-12">
-                    <h3>SkillTreat API</h3>
-                    <a target="_blank" href="https://github.com/markgreenburg/skilltreatapi">
+                    <h3>Acquisition Tracker</h3>
+                    <a target="_blank" href="https://github.com/markgreenburg/acquisitiontracker">
                     <i class="fa fa-github"></i> GitHub</a>
                 </div>
             </div>
             <div class="row image-row">
                 <div class="col-xs-12">
                     <img class="img-responsive img-thumbnail" src=
-                    "{{url_for('static', filename='images/skilltreatapi2.png')}}"
+                    "{{url_for('static', filename='images/pipeline.png')}}"
                     />
                 </div>
             </div>
             <div class="row content-row">
                 <div class="col-xs-12">
-                    <p>SkillTreat is an eCommerce API built with PostgreSQL,
-                    Sequelize ORM, NodeJs, and Express. It's deployed on AWS and
-                    uses SSL encryption. The API features core eComm. 
-                    capabilities (user, cart, order management, etc.). 
-                    Authentication is stateless, using JSON web tokens. New 
-                    user registration includes a verification flow, with users
-                    able to request new tokens upon expiration or blacklisting.
+                    <p>The Acquisition Tracker is a React + Redux web app that
+                        tracks buy-side mergers &amp; acquisitions deals. It 
+                        consists of a pipeline that features a fully-editable
+                        and sortable table of deals (with data validation), and
+                        a deal details view that allows more granular editing
+                        functionality for each deal.
                     </p> 
                 </div>
             </div>
@@ -87,7 +89,7 @@
             <div class="row">
                 <div class="col-xs-12">
                     <h3>markWith</h3>
-                    <a target="_blank" href="https://github.com/markgreenburg/markWith">
+                    <a target="_blank" href="https://github.com/markgreenburg/markWith" >
                     <i class="fa fa-github"></i> GitHub</a> | 
                     <a target="_blank" href="https://markwith.herokuapp.com">
                      Website</a>
